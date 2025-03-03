@@ -129,7 +129,7 @@ LLMs have a limited ability to output long text responses. Most LLMs have a `max
 
 By default, shortform podcasts (default configuration) generate audio of about 2-5 minutes while longform podcasts may reach 20-30 minutes.
 
-Users may adjust lonform podcast length by setting the following parameters in your customization params (conversation_config.yaml):
+Users may adjust longform podcast length by setting the following parameters in your customization params (conversation_config.yaml):
 - `max_num_chunks` (default: 7): Sets maximum number of rounds of discussions.
 - `min_chunk_size` (default: 600): Sets minimum number of characters to generate a round of discussion.
 
