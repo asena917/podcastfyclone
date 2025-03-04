@@ -85,7 +85,8 @@ coverage.xml
 .ipynb_checkpoints
 
 # pyenv
-.python-version
+#.python-version
+# original repository had this mistake. It must be 3.11 as 3.13 will conflict on the dependencies (adioop library will not work)
 
 # Environments
 .env
