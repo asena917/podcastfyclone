@@ -130,7 +130,8 @@ async def serve_audio(filename: str):
 
 @app.get("/health")
 async def healthcheck():
-    return {"status": "healthy"}
+    return {"status": "healthy"
+            "simple_test": "this is a simple test"}
 
 if __name__ == "__main__":
     host = os.getenv("HOST", "127.0.0.1")
