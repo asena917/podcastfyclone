@@ -51,6 +51,8 @@ async def generate_podcast_endpoint(data: dict):
     """"""
     try:
         # Set environment variables
+        print(f"my first debug in the POST method")
+        print(f"my second debug message in the POST {config_path}")
         os.environ['OPENAI_API_KEY'] = data.get('openai_key')
         os.environ['GEMINI_API_KEY'] = data.get('google_key')
         os.environ['ELEVENLABS_API_KEY'] = data.get('elevenlabs_key')
@@ -130,6 +132,7 @@ async def serve_audio(filename: str):
 
 @app.get("/health")
 async def healthcheck():
+    print(f"just print something")
     return {"status": "healthy",
             "simple_test": "this is a simple test"}
 
